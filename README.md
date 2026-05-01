@@ -64,7 +64,8 @@ adaptive = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_MEAN_C,
                                   cv2.THRESH_BINARY, 11, 2)
 ```
 
-**Output:** `out_1_thresholding.png`
+**Output:**
+![Screenshot edit](Dokumentasi_Prak8/Thresholding.png)
 
 ---
 
@@ -85,7 +86,9 @@ def region_growing(citra, seed, threshold=25):
 
 **Pengujian:** 3 seed point dengan warna berbeda (merah, hijau, biru)
 
-**Output:** `out_2_region_growing.png`
+**Output:** 
+![Screenshot edit](Dokumentasi_Prak8/region_growing.png)
+
 
 ---
 
