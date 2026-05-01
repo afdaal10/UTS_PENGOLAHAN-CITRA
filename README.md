@@ -116,7 +116,9 @@ gx = cv2.filter2D(gray.astype(np.float32), -1, Kx)
 canny = cv2.Canny(gray, 50, 150)
 ```
 
-**Output:** `out_3_deteksi_tepi.png`
+**Output:** 
+![Screenshot edit](Dokumentasi_Prak8/deteksi_tepi.png)
+
 
 ---
 
@@ -139,7 +141,9 @@ def kmeans_segmentasi(citra, K):
                                       cv2.KMEANS_RANDOM_CENTERS)
 ```
 
-**Output:** `out_4_kmeans.png`
+**Output:** 
+![Screenshot edit](Dokumentasi_Prak8/K-Means.png)
+
 
 ---
 
@@ -160,7 +164,9 @@ markers = label(mask_peak)
 ws_labels = watershed(-dist_tf, markers, mask=opening)
 ```
 
-**Output:** `out_5_watershed.png`
+**Output:** 
+![Screenshot edit](Dokumentasi_Prak8/wathersed_segmentation.png)
+
 
 ---
 
@@ -188,7 +194,9 @@ Evaluasi dilakukan untuk mengukur seberapa baik hasil segmentasi dibandingkan de
 | C: Over-segmentation | 0.591 | 0.743 |
 | D: Posisi Salah | 0.032 | 0.062 |
 
-**Output:** `out_6_evaluasi.png`
+**Output:** 
+![Screenshot edit](Dokumentasi_Prak8/evaluasi_segmentasi.png)
+
 
 ---
 
